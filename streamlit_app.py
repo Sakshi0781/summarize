@@ -11,8 +11,8 @@ from pytrends.request import TrendReq
 from functools import reduce
 
 # Set the API key for Google Serper
-os.environ["SERPER_API_KEY"] = "8ab032d2b62c29259a0e0bf4eaf65fc2be8feb75"
-os.environ["GROQ_API_KEY"] = "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"
+os.environ["SERPER_API_KEY"] = "6bc71ef7629197b564d29683b9c0a749d990d031"
+os.environ["GROQ_API_KEY"] = "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"
 
 # Define the keywords for each brand
 # Default keywords for each brand
@@ -46,7 +46,7 @@ def get_google_news_data(keywords):
 
 # Function to get the Gemini client for summarization
 def get_gemini_client():
-    return genai.Client(api_key=os.getenv("GEMINI_API_KEY", "AIzaSyCJeqV2cNBq2m-ozeoaOw5JO88FhBfNhwc"))
+    return genai.Client(api_key=os.getenv("GEMINI_API_KEY", "AIzaSyCcOXbABZ5gXfY0QDngLWpksYD-os8s1VY"))
 
 # Function to extract a news summary using the Gemini API
 def extract_news_summary(topic, time_posted):
