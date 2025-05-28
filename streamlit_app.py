@@ -46,7 +46,7 @@ def get_google_news_data(keywords):
 
 # Function to get the Gemini client for summarization
 def get_gemini_client():
-    return genai.Client(api_key=os.getenv("GEMINI_API_KEY", "AIzaSyCcOXbABZ5gXfY0QDngLWpksYD-os8s1VY"))
+    return genai.Client(api_key=os.getenv("GEMINI_API_KEY", "AIzaSyA7KRwz4rfWQ8yWXCMXhbxxdLBsppj2WHs"))
 
 # Function to extract a news summary using the Gemini API
 def extract_news_summary(topic, time_posted):
